@@ -6,20 +6,37 @@ using UnityEngine.UI;
 public class StageSelectMng : MonoBehaviour
 {
     public Sprite[] stageSelectImg=null;
-    int arrow_dir=0;
-    public Image bgImg = null;
-    public GameObject bgImgPrb=null;
+    public Sprite[] stageSelectSprite = null;
     public List<GameObject> bgPrbList=null;
+    [HideInInspector]
+    public GameObject bgImgPrb = null;
+    [HideInInspector]
     public GameObject canvas=null;
+    int arrow_dir = 0;
     public void Awake()
     {
         stageSelectImg=Resources.LoadAll<Sprite>("StageMapImg");
-        foreach(var num in stageSelectImg)
+        stageSelectSprite = Resources.LoadAll<Sprite>("Stage_Stars_new");
+        foreach (var num in stageSelectImg)
         {
-           GameObject bgPrb= Instantiate(bgImgPrb, Vector3.zero,Quaternion.identity, canvas.transform);
-           bgPrbList.Add(bgPrb);
+            Vector3 canvasPos = new Vector3(canvas.transform.position.x + bgPrbList.Count* canvas.transform.position.x*2, canvas.transform.position.y, canvas.transform.position.z);
+            GameObject bgImgInst= Instantiate(bgImgPrb, canvasPos, Quaternion.identity, canvas.transform);
+            bgImgInst.GetComponent<Image>().sprite = num;
+            bgPrbList.Add(bgImgInst);
         }
     }
+    public void LoadStageData()
+    {
+        for (int i = 0; i <bgPrbList.Count;i++)
+        {
+           int clearNum= bgPrbList[i].GetComponent<StageSelectBtn>().stageSelectBtn[i].GetComponent<StageSelectBtnState>().StageClear;
+            if(clearNum!=0)
+            {
+                bgPrbList[i].GetComponent<StageSelectBtn>().stageSelectBtn[0].GetComponent<StageSelectBtnState>();
+            }
+        }
+    }
+
     public void Arrow()
     {
         
