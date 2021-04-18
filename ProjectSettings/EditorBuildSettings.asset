@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Logo.unity
     guid: 7d7737b5fb2ac4d1f9d5ea91506e2d95
   - enabled: 1
-    path: Assets/Scenes/SelectStage.unity
-    guid: f9faea0ad812c4467b83ddb60ed44fce
+    path: Assets/Scenes/StageSelect.unity
+    guid: 5e91c0bc3268b4e86b9cb2c6997f7134
   - enabled: 1
     path: Assets/Scenes/InGame.unity
     guid: 26a04ff82e8e9438ea1706031b415d60
