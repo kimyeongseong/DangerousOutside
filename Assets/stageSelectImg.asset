@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9c35316d78374e29844032fae0d291b, type: 3}
+  m_Name: stageSelectImg
+  m_EditorClassIdentifier: 
+  m_AtlasTexture: {fileID: 2800000, guid: 02a6d6badc65d4c8ca8a690c7b185d03, type: 3}
+  m_Values:
+  - {fileID: -3078254244414325819, guid: 02a6d6badc65d4c8ca8a690c7b185d03, type: 3}
+  - {fileID: -1159593454893666179, guid: 02a6d6badc65d4c8ca8a690c7b185d03, type: 3}
+  - {fileID: -1822048505688626421, guid: 02a6d6badc65d4c8ca8a690c7b185d03, type: 3}
+  - {fileID: 1367554263781712778, guid: 02a6d6badc65d4c8ca8a690c7b185d03, type: 3}
+  - {fileID: 4025928710529475695, guid: 02a6d6badc65d4c8ca8a690c7b185d03, type: 3}
+  - {fileID: 6905688290101920613, guid: 02a6d6badc65d4c8ca8a690c7b185d03, type: 3}
+  - {fileID: -936019926438210237, guid: 02a6d6badc65d4c8ca8a690c7b185d03, type: 3}
+  - {fileID: -7783577476321343647, guid: 02a6d6badc65d4c8ca8a690c7b185d03, type: 3}
+  - {fileID: 6574031791243772705, guid: 02a6d6badc65d4c8ca8a690c7b185d03, type: 3}
+  - {fileID: 705676207422484540, guid: 02a6d6badc65d4c8ca8a690c7b185d03, type: 3}
+  - {fileID: 8170637013316162803, guid: 02a6d6badc65d4c8ca8a690c7b185d03, type: 3}
+  - {fileID: -7174874627160076005, guid: 02a6d6badc65d4c8ca8a690c7b185d03, type: 3}
+  - {fileID: -7514736221422304408, guid: 02a6d6badc65d4c8ca8a690c7b185d03, type: 3}
+  m_Keys:
+  - Stage1_ bg-01-01
+  - Stage_B1
+  - Stage_B2
+  - Stage_B3
+  - Stage_BEmpty
+  - Stage_R1
+  - Stage_R2
+  - Stage_R3
+  - Stage_REmpty
+  - Stage_W1
+  - Stage_W2
+  - Stage_W3
+  - Stage_WEmpty
