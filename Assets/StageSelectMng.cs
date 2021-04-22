@@ -27,14 +27,19 @@ public class StageSelectMng : MonoBehaviour
             bgPrbList.Add(bgImgInst);
         }
     }
+    public void Start()
+    {
+        LoadStageData();
+    }
     public void LoadStageData()
     {
-        for (int i = 0; i <bgPrbList.Count;i++)
+        foreach (var num in bgPrbList)
         {
-           int clearNum= bgPrbList[i].GetComponent<StageSelectBtn>().stageSelectBtn[i].GetComponent<StageSelectBtnState>().StageClear;
-            if(clearNum!=0)
+            for (int i = 0; i < 5; i++)
             {
-                bgPrbList[i].GetComponent<StageSelectBtn>().stageSelectBtn[0].GetComponent<StageSelectBtnState>();
+                StageSceleBtnStateEnum clearstate = num.GetComponent<StageSelectBtn>().stageSelectBtn[i].GetComponent<StageSelectBtnState>().clearstate;
+                if (clearstate == StageSceleBtnStateEnum.NotClear)
+                    num.GetComponent<StageSelectBtn>().stageSelectBtn[i].GetComponent<Image>().sprite = stageSelectSprite[10];
             }
         }
     }

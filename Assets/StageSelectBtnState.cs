@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-
+public enum StageSceleBtnStateEnum
+{
+    Clear,
+    NotClear
+}
 public class StageSelectBtnState : MonoBehaviour
 {
-    public enum StageSceleBtnStateEnum
-    {
-        Clear,
-        NotClear
-    }
+    
     public int StageClear=0;
+    public StageSceleBtnStateEnum clearstate = StageSceleBtnStateEnum.NotClear;
     private void OnEnable()
     {
-        Debug.Log("hello");
         GetComponent<Button>().onClick.AddListener(GameStart);
     }
     public void GameStart()
